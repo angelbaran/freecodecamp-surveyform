@@ -11,15 +11,18 @@
     <h1 id="title">Coffee Shop Survey Form</h1>
     <p id="description">Thank you for your important feedback regarding our coffee shop.</p>
     <form id="survey-form">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label id="name-label">Name</label><br>
-            <input id="name" type="text" placeholder="Enter your name"><br><br>
-            <label id="email-label">Email</label><br>
-            <input id="email" type="email" placeholder="abc@gmail.com"><br><br>
-            <label id="number-label">Age</label><br>
-            <input id="number" type="number" placeholder="Age" min="0" max="130">
-        </fieldset><br>
+            <div class="form-control">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-control">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter your email">
+            </div>
+            <div class="form-control">
+                <label for="age" id="number-label">Age</label>
+                <input id="number" type="number" placeholder="Age" min="0" max="130">
+             </div>
 
         <label for="option">How many times per week do you visit a coffee shop?</label><br>
     <select id="dropdown">
